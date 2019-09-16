@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="MyFirstApp">
 <head>
     <meta charset="UTF-8">
     <title>Hola mundo con AngularJS</title>
     <script src="angular.min.js"></script>
+    <script src="controller.js"></script>
 </head>
-<body>
-    {{'hola '+'mundo'}}
+<body ng-controller="FirstController">
+     {{'hola '+nombre}}
 </body>
 </html>
