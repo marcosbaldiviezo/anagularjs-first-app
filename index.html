@@ -7,6 +7,10 @@
     <script src="controller.js"></script>
 </head>
 <body ng-controller="FirstController">
+    
+
+
+
     <h1>Agregar nuevo comentario</h1>
     Comentario: <input type="text" ng-model="nuevoComentario.comentario">
     <br><br>
@@ -15,6 +19,8 @@
     <button ng-click="agregarComentario()">Agregar comentario</button>
     <br><br>
     <hr>
+
+
 
 
 
@@ -27,5 +33,35 @@
             <strong>{{comentario.username}}</strong>
         </li>
     </ul>
+
+
+
+
+
+    <h1>LLAMADAS HTTP - Recuperando posts desde jsonplaceholder</h1>
+    <h1>Agregar nuevo post</h1>
+    <input type="text" ng-model="newPost.title"> <br>
+    <textarea ng-model="newPost.body">
+
+    </textarea>
+    <button ng-click="addPost()">Enviar</button>
+    <hr>
+
+
+
+    <h1>Listado de posts</h1>
+    <ul>
+        <li ng-repeat="post in posts">
+            <h2>{{post.title}}</h2>
+            <p>
+                {{post.body}}
+            </p>
+        </li>
+    </ul>
+
+
+
+
+    <hr>
 </body>
 </html>
